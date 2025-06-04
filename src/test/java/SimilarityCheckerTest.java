@@ -54,4 +54,11 @@ class SimilarityCheckerTest {
         int actual = similarityChecker.similarityChecker("AAABB", "BAA");
         assertEquals(expect, actual);
     }
+
+    @Test
+    void lengthCheckerTestSwap() {
+        int expect = 20;
+        int actual = similarityChecker.similarityChecker("BAA", "AAABB");
+        assertEquals(expect, actual);
+    }
 }
